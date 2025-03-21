@@ -16,14 +16,28 @@ import Github from "@assets/icons/github.astro";
 import Vscode from "@assets/icons/vscode.astro";
 import Figma from "@assets/icons/figma.astro";
 import Angular from "@assets/angular.astro";
+import Mongodb from "@assets/mongodb.astro";
+import Mssql from "@assets/mssql.astro";
+import C from "@assets/c.astro";
+import Cpp from "@assets/cpp.astro";
+import Java from "@assets/java.astro";
+import Python from "@assets/python.astro";
+import Rust from "@assets/rust.astro";
+import Typescript from "@assets/typescript.astro";
 ---
 
 <section class="my-20">
   <h2 class="text-2xl font-semibold mb-1">Habilidades</h2>
-  <hr class="mb-6 border-zinc-600">
+  <hr class="mb-6 border-zinc-600" />
 
-  <h3 class="text-xl font-medium mb-4 siz">Frontend</h3>
+  <h3 class="text-xl font-medium mb-4">Lenguajes</h3>
   <div class="flex flex-wrap gap-5">
+    <IconContainer name="C">
+      <C size="size-9" />
+    </IconContainer>
+    <IconContainer name="C++">
+      <Cpp size="size-9" />
+    </IconContainer>
     <IconContainer name="HTML">
       <Html size="size-9" />
     </IconContainer>
@@ -33,6 +47,22 @@ import Angular from "@assets/angular.astro";
     <IconContainer name="Javascript">
       <Javascript size="size-9" />
     </IconContainer>
+    <IconContainer name="Typescript">
+      <Typescript size="size-9" />
+    </IconContainer>
+    <IconContainer name="Java">
+      <Java size="size-9" />
+    </IconContainer>
+    <IconContainer name="Python">
+      <Python size="size-9" />
+    </IconContainer>
+    <IconContainer name="Rust">
+      <Rust size="size-9" />
+    </IconContainer>
+  </div>
+
+  <h3 class="text-xl font-medium mt-6 mb-4">Frameworks</h3>
+  <div class="flex flex-wrap gap-5">
     <IconContainer name="React">
       <React size="size-9" />
     </IconContainer>
@@ -45,15 +75,21 @@ import Angular from "@assets/angular.astro";
     <IconContainer name="Angular">
       <Angular size="size-9" />
     </IconContainer>
-  </div>
-
-  <h3 class="text-xl font-medium mt-6 mb-4">Backend</h3>
-  <div class="flex flex-wrap gap-5">
-    <IconContainer name="Node">
-      <Node size="size-9" />
-    </IconContainer>
     <IconContainer name="Express">
       <Express size="size-9" />
+    </IconContainer>
+    <IconContainer name="Nodejs">
+      <Node size="size-9" />
+    </IconContainer>
+  </div>
+
+  <h3 class="text-xl font-medium mt-6 mb-4">Bases de datos</h3>
+  <div class="flex flex-wrap gap-5">
+    <IconContainer name="MongoDB">
+      <Mongodb size="size-9" />
+    </IconContainer>
+    <IconContainer name="MSSQL">
+      <Mssql size="size-9" />
     </IconContainer>
     <IconContainer name="MySQL">
       <Mysql size="size-9" />
