@@ -1,25 +1,38 @@
 ---
-import ProjectCard from '@components/ProjectCard.astro'
-import Typescript from '@assets/icons/typescript.astro';
-import React from '@assets/icons/react.astro';
-import Supabase from '@assets/icons/supabase.astro';
-import Tailwind from '@assets/icons/tailwind.astro';
+import ProjectCard from "@components/ProjectCard.astro";
+import Typescript from "@assets/icons/typescript.astro";
+import Angular from "@assets/angular.astro";
+import React from "@assets/icons/react.astro";
+import Mongodb from "@assets/mongodb.astro";
+import Tailwind from "@assets/icons/tailwind.astro";
+import Node from "@assets/icons/node.astro";
 ---
 
 <section class="my-20">
   <h2 class="text-2xl font-semibold mb-2">Proyectos</h2>
-  <hr class="mb-6 border-zinc-600">
-
-  <ProjectCard projectTitle="Centro Digital" projectDescription="Aplicación web que ayuda a los usuarios a buscar negocios locales cercanos, proporcionando información detallada, contactos, y mapas interactivos." projectLink="https://github.com/garaven/centro-digital" image="/images/centro-digital.png">
-    <React />
-    <Supabase />
+  <hr class="mb-6 border-zinc-600" />
+  <ProjectCard
+    projectTitle="IMDB-mini"
+    projectDescription="Sistema de catálogo de peliculas y actores, similar a la pagina IMDB en una versión minizada. Para el curso de Diseño de aplicaciones web"
+    projectLink="https://github.com/Willvillegas/Proyecto-Web"
+    image="/images/IMDB.jpg"
+  >
+    <Angular />
+    <Mongodb/>
     <Tailwind />
     <Typescript />
   </ProjectCard>
-
-  <ProjectCard projectTitle="StockIn" projectDescription="Sistema de gestión de inventario eficiente para Pymes, que simplifica el seguimiento, el control y la optimización de los niveles de existencias para satisfacer sus necesidades específicas." projectLink="https://github.com/Gothsec/StockIn-demo" image="/images/stockin.png">
+  
+  <ProjectCard
+  projectTitle="Gestión de actividades academicas nuevo ingreso"
+  projectDescription="Aplicacion web creado para la gestión de perfiles de nuevo ingreso y de actividades academicas del tecnológico de Costa Rica, creado para el curso de Diseno de software"
+    projectLink="https://github.com/Willvillegas/Proyecto-DS-Equipo5"
+    image="/images/FotoJet.jpg"
+  >
     <React />
-    <Supabase />
+    <Mongodb />
     <Tailwind />
+    <Node />
   </ProjectCard>
+
 </section>
