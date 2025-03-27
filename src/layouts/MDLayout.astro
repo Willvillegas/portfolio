@@ -1,0 +1,29 @@
+---
+import Layout from "./Layout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.title}>
+    <div
+        class="min-w-[535px] max-w-screen-lg mx-auto py-16 px-8 selection:bg-gray-600 selection:text-white"
+    >
+        <header class="flex justify-center items-center">
+            <h1 class="text-6xl">{frontmatter.title}</h1>
+        </header>
+        <div class="mt-8">
+            <p>
+                {frontmatter.author}
+            </p>
+        </div>
+        <div class="m-7 flex justify-center items-center">
+            <img
+                src={frontmatter.image.url}
+                class="w-9/12"
+                alt={frontmatter.image.alt}
+            />
+        </div>
+        <div class="mt-6">
+            <slot />
+        </div>
+    </div>
+</Layout>
