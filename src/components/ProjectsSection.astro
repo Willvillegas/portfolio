@@ -7,11 +7,22 @@ import Mongodb from "@assets/mongodb.astro";
 import Tailwind from "@assets/icons/tailwind.astro";
 import Node from "@assets/icons/node.astro";
 import Mssql from "@assets/mssql.astro";
+import C from "@assets/c.astro";
 ---
 
 <section class="my-20">
   <h2 class="text-2xl font-semibold mb-2">Proyectos</h2>
   <hr class="mb-6 border-zinc-600" />
+
+  <ProjectCard
+    projectTitle="Compresión de archivos (algoritmo de Huffman)"
+    projectDescription="Sistema de compresión y descompresión de archivos por medio del algoritmo de Huffman (en consola). Fue implementado en 3 versiones para buscar el optimo (Procesos,Hilos,Regular) creado para el curso de Sistemas Operativos"
+    projectLink="https://github.com/Willvillegas/Proyecto-1-Operativos"
+    image="/images/compress.png"
+  >
+    <C />
+  </ProjectCard>
+
   <ProjectCard
     projectTitle="IMDB-mini"
     projectDescription="Sistema de catálogo de peliculas y actores, similar a la pagina IMDB en una versión minizada. Para el curso de Diseño de aplicaciones web"
@@ -19,14 +30,14 @@ import Mssql from "@assets/mssql.astro";
     image="/images/IMDB.jpg"
   >
     <Angular />
-    <Mongodb/>
+    <Mongodb />
     <Tailwind />
     <Typescript />
   </ProjectCard>
-  
+
   <ProjectCard
-  projectTitle="Gestión de actividades academicas nuevo ingreso"
-  projectDescription="Aplicacion web creado para la gestión de perfiles de nuevo ingreso y de actividades academicas del tecnológico de Costa Rica, creado para el curso de Diseno de software"
+    projectTitle="Gestión de actividades academicas nuevo ingreso"
+    projectDescription="Aplicacion web creado para la gestión de perfiles de nuevo ingreso y de actividades academicas del tecnológico de Costa Rica, creado para el curso de Diseno de software"
     projectLink="https://github.com/Willvillegas/Proyecto-DS-Equipo5"
     image="/images/FotoJet.jpg"
   >
@@ -35,5 +46,4 @@ import Mssql from "@assets/mssql.astro";
     <Tailwind />
     <Node />
   </ProjectCard>
-
 </section>
